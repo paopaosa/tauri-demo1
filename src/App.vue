@@ -7,6 +7,7 @@
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css';
 // Vue.use(ElementUI);
+import { NDivider } from 'naive-ui'
 </script>
 
 <template>
@@ -15,6 +16,7 @@
   <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite + Element-UI" /> -->
   <div id="nav">
     <router-link to="/">Home</router-link>
+    <n-divider vertical />
     <router-link to="/About">About</router-link>
     <router-view />
   </div>
