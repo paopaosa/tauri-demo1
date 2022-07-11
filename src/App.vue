@@ -7,7 +7,7 @@
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css';
 // Vue.use(ElementUI);
-import { NDivider } from 'naive-ui'
+import { NDivider, NButton } from 'naive-ui'
 </script>
 
 <template>
@@ -15,9 +15,18 @@ import { NDivider } from 'naive-ui'
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite + Element-UI" /> -->
   <div id="nav">
-    <router-link to="/">Home</router-link>
-    <n-divider vertical />
-    <router-link to="/About">About</router-link>
+    <router-link to="/">
+      <n-button quaternary round type="primary">
+        Home
+      </n-button>
+    </router-link>
+    <!-- <n-divider vertical /> -->
+    <router-link to="/About">
+      <n-button quaternary round type="primary">
+        About
+      </n-button>
+    </router-link>
+    <!-- <n-divider /> -->
     <router-view />
   </div>
 </template>
@@ -30,5 +39,9 @@ import { NDivider } from 'naive-ui'
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
+}
+
+a {
+  text-decoration-line: none;
 }
 </style>
